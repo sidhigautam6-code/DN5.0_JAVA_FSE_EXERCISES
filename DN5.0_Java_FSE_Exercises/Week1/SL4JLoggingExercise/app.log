@@ -1,0 +1,194 @@
+2026-07-01 22:20:16.831 [com.example.MainRunner.main()] ERROR com.example.LoggingExample - This is an error message
+2026-07-01 22:20:16.834 [com.example.MainRunner.main()] WARN  com.example.LoggingExample - This is a warning message
+2026-07-01 22:20:16.836 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - User john_doe logged in successfully
+2026-07-01 22:20:16.838 [com.example.MainRunner.main()] WARN  c.e.ParameterizedLoggingExample - User john_doe has 3 failed login attempts
+2026-07-01 22:20:16.838 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - Temperature: 23.5, Active status: true
+2026-07-01 22:20:16.841 [com.example.MainRunner.main()] ERROR c.e.ParameterizedLoggingExample - Error during division: 10 / 0
+java.lang.ArithmeticException: / by zero
+	at com.example.ParameterizedLoggingExample.main(ParameterizedLoggingExample.java:25)
+	at com.example.MainRunner.main(MainRunner.java:13)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-01 22:20:16.842 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - User details: User{name='alice', age=25}
+2026-07-01 22:20:16.847 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Application started with different appenders
+2026-07-01 22:20:16.847 [com.example.MainRunner.main()] DEBUG com.example.AppenderExample - This is a debug message
+2026-07-01 22:20:16.847 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - This is an info message
+2026-07-01 22:20:16.848 [com.example.MainRunner.main()] WARN  com.example.AppenderExample - This is a warning message
+2026-07-01 22:20:16.848 [com.example.MainRunner.main()] ERROR com.example.AppenderExample - This is an error message
+2026-07-01 22:20:16.849 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12345 with amount: $150.5
+2026-07-01 22:20:16.850 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Order ORD-12345 processed successfully
+2026-07-01 22:20:16.850 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12346 with amount: $275.3
+2026-07-01 22:20:16.850 [com.example.MainRunner.main()] WARN  com.example.AppenderExample - Order ORD-12346 exceeds $200 threshold - requiring approval
+2026-07-01 22:20:16.850 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Order ORD-12346 processed successfully
+2026-07-01 22:20:16.850 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12347 with amount: $-50.0
+2026-07-01 22:20:16.850 [com.example.MainRunner.main()] ERROR com.example.AppenderExample - Invalid amount for order ORD-12347: $-50.0
+2026-07-01 22:20:43.550 [com.example.MainRunner.main()] ERROR com.example.LoggingExample - This is an error message
+2026-07-01 22:20:43.553 [com.example.MainRunner.main()] WARN  com.example.LoggingExample - This is a warning message
+2026-07-01 22:20:43.555 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - User john_doe logged in successfully
+2026-07-01 22:20:43.557 [com.example.MainRunner.main()] WARN  c.e.ParameterizedLoggingExample - User john_doe has 3 failed login attempts
+2026-07-01 22:20:43.557 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - Temperature: 23.5, Active status: true
+2026-07-01 22:20:43.560 [com.example.MainRunner.main()] ERROR c.e.ParameterizedLoggingExample - Error during division: 10 / 0
+java.lang.ArithmeticException: / by zero
+	at com.example.ParameterizedLoggingExample.main(ParameterizedLoggingExample.java:25)
+	at com.example.MainRunner.main(MainRunner.java:13)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-01 22:20:43.562 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - User details: User{name='alice', age=25}
+2026-07-01 22:20:43.568 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Application started with different appenders
+2026-07-01 22:20:43.569 [com.example.MainRunner.main()] DEBUG com.example.AppenderExample - This is a debug message
+2026-07-01 22:20:43.569 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - This is an info message
+2026-07-01 22:20:43.569 [com.example.MainRunner.main()] WARN  com.example.AppenderExample - This is a warning message
+2026-07-01 22:20:43.569 [com.example.MainRunner.main()] ERROR com.example.AppenderExample - This is an error message
+2026-07-01 22:20:43.570 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12345 with amount: $150.5
+2026-07-01 22:20:43.571 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Order ORD-12345 processed successfully
+2026-07-01 22:20:43.571 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12346 with amount: $275.3
+2026-07-01 22:20:43.573 [com.example.MainRunner.main()] WARN  com.example.AppenderExample - Order ORD-12346 exceeds $200 threshold - requiring approval
+2026-07-01 22:20:43.574 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Order ORD-12346 processed successfully
+2026-07-01 22:20:43.574 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12347 with amount: $-50.0
+2026-07-01 22:20:43.574 [com.example.MainRunner.main()] ERROR com.example.AppenderExample - Invalid amount for order ORD-12347: $-50.0
+2026-07-01 22:20:58.884 [com.example.MainRunner.main()] ERROR com.example.LoggingExample - This is an error message
+2026-07-01 22:20:58.888 [com.example.MainRunner.main()] WARN  com.example.LoggingExample - This is a warning message
+2026-07-01 22:20:58.889 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - User john_doe logged in successfully
+2026-07-01 22:20:58.892 [com.example.MainRunner.main()] WARN  c.e.ParameterizedLoggingExample - User john_doe has 3 failed login attempts
+2026-07-01 22:20:58.893 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - Temperature: 23.5, Active status: true
+2026-07-01 22:20:58.895 [com.example.MainRunner.main()] ERROR c.e.ParameterizedLoggingExample - Error during division: 10 / 0
+java.lang.ArithmeticException: / by zero
+	at com.example.ParameterizedLoggingExample.main(ParameterizedLoggingExample.java:25)
+	at com.example.MainRunner.main(MainRunner.java:13)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-01 22:20:58.897 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - User details: User{name='alice', age=25}
+2026-07-01 22:20:58.901 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Application started with different appenders
+2026-07-01 22:20:58.902 [com.example.MainRunner.main()] DEBUG com.example.AppenderExample - This is a debug message
+2026-07-01 22:20:58.902 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - This is an info message
+2026-07-01 22:20:58.903 [com.example.MainRunner.main()] WARN  com.example.AppenderExample - This is a warning message
+2026-07-01 22:20:58.903 [com.example.MainRunner.main()] ERROR com.example.AppenderExample - This is an error message
+2026-07-01 22:20:58.903 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12345 with amount: $150.5
+2026-07-01 22:20:58.904 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Order ORD-12345 processed successfully
+2026-07-01 22:20:58.904 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12346 with amount: $275.3
+2026-07-01 22:20:58.904 [com.example.MainRunner.main()] WARN  com.example.AppenderExample - Order ORD-12346 exceeds $200 threshold - requiring approval
+2026-07-01 22:20:58.905 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Order ORD-12346 processed successfully
+2026-07-01 22:20:58.905 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12347 with amount: $-50.0
+2026-07-01 22:20:58.905 [com.example.MainRunner.main()] ERROR com.example.AppenderExample - Invalid amount for order ORD-12347: $-50.0
+2026-07-01 22:21:23.493 [com.example.MainRunner.main()] ERROR com.example.LoggingExample - This is an error message
+2026-07-01 22:21:23.496 [com.example.MainRunner.main()] WARN  com.example.LoggingExample - This is a warning message
+2026-07-01 22:21:23.498 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - User john_doe logged in successfully
+2026-07-01 22:21:23.500 [com.example.MainRunner.main()] WARN  c.e.ParameterizedLoggingExample - User john_doe has 3 failed login attempts
+2026-07-01 22:21:23.500 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - Temperature: 23.5, Active status: true
+2026-07-01 22:21:23.503 [com.example.MainRunner.main()] ERROR c.e.ParameterizedLoggingExample - Error during division: 10 / 0
+java.lang.ArithmeticException: / by zero
+	at com.example.ParameterizedLoggingExample.main(ParameterizedLoggingExample.java:25)
+	at com.example.MainRunner.main(MainRunner.java:13)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:254)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-01 22:21:23.504 [com.example.MainRunner.main()] INFO  c.e.ParameterizedLoggingExample - User details: User{name='alice', age=25}
+2026-07-01 22:21:23.511 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Application started with different appenders
+2026-07-01 22:21:23.511 [com.example.MainRunner.main()] DEBUG com.example.AppenderExample - This is a debug message
+2026-07-01 22:21:23.511 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - This is an info message
+2026-07-01 22:21:23.512 [com.example.MainRunner.main()] WARN  com.example.AppenderExample - This is a warning message
+2026-07-01 22:21:23.512 [com.example.MainRunner.main()] ERROR com.example.AppenderExample - This is an error message
+2026-07-01 22:21:23.512 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12345 with amount: $150.5
+2026-07-01 22:21:23.512 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Order ORD-12345 processed successfully
+2026-07-01 22:21:23.512 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12346 with amount: $275.3
+2026-07-01 22:21:23.513 [com.example.MainRunner.main()] WARN  com.example.AppenderExample - Order ORD-12346 exceeds $200 threshold - requiring approval
+2026-07-01 22:21:23.513 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Order ORD-12346 processed successfully
+2026-07-01 22:21:23.513 [com.example.MainRunner.main()] INFO  com.example.AppenderExample - Processing order: ORD-12347 with amount: $-50.0
+2026-07-01 22:21:23.513 [com.example.MainRunner.main()] ERROR com.example.AppenderExample - Invalid amount for order ORD-12347: $-50.0
+2026-07-01 22:21:47.157 [main] ERROR com.example.LoggingExample - This is an error message
+2026-07-01 22:21:47.161 [main] WARN  com.example.LoggingExample - This is a warning message
+2026-07-01 22:21:47.163 [main] INFO  com.example.AppTest - Test logger is working
+2026-07-01 22:21:47.166 [main] INFO  c.e.ParameterizedLoggingExample - User john_doe logged in successfully
+2026-07-01 22:21:47.167 [main] WARN  c.e.ParameterizedLoggingExample - User john_doe has 3 failed login attempts
+2026-07-01 22:21:47.169 [main] INFO  c.e.ParameterizedLoggingExample - Temperature: 23.5, Active status: true
+2026-07-01 22:21:47.172 [main] ERROR c.e.ParameterizedLoggingExample - Error during division: 10 / 0
+java.lang.ArithmeticException: / by zero
+	at com.example.ParameterizedLoggingExample.main(ParameterizedLoggingExample.java:25)
+	at com.example.AppTest.testParameterizedLogging(AppTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-07-01 22:21:47.174 [main] INFO  c.e.ParameterizedLoggingExample - User details: User{name='alice', age=25}
+2026-07-01 22:21:47.182 [main] INFO  com.example.AppenderExample - Application started with different appenders
+2026-07-01 22:21:47.182 [main] DEBUG com.example.AppenderExample - This is a debug message
+2026-07-01 22:21:47.182 [main] INFO  com.example.AppenderExample - This is an info message
+2026-07-01 22:21:47.182 [main] WARN  com.example.AppenderExample - This is a warning message
+2026-07-01 22:21:47.183 [main] ERROR com.example.AppenderExample - This is an error message
+2026-07-01 22:21:47.183 [main] INFO  com.example.AppenderExample - Processing order: ORD-12345 with amount: $150.5
+2026-07-01 22:21:47.183 [main] INFO  com.example.AppenderExample - Order ORD-12345 processed successfully
+2026-07-01 22:21:47.183 [main] INFO  com.example.AppenderExample - Processing order: ORD-12346 with amount: $275.3
+2026-07-01 22:21:47.184 [main] WARN  com.example.AppenderExample - Order ORD-12346 exceeds $200 threshold - requiring approval
+2026-07-01 22:21:47.184 [main] INFO  com.example.AppenderExample - Order ORD-12346 processed successfully
+2026-07-01 22:21:47.184 [main] INFO  com.example.AppenderExample - Processing order: ORD-12347 with amount: $-50.0
+2026-07-01 22:21:47.184 [main] ERROR com.example.AppenderExample - Invalid amount for order ORD-12347: $-50.0
+2026-07-01 22:22:07.982 [main] ERROR com.example.LoggingExample - This is an error message
+2026-07-01 22:22:07.986 [main] WARN  com.example.LoggingExample - This is a warning message
+2026-07-01 22:22:07.988 [main] INFO  com.example.AppTest - Test logger is working
+2026-07-01 22:22:07.989 [main] INFO  c.e.ParameterizedLoggingExample - User john_doe logged in successfully
+2026-07-01 22:22:07.992 [main] WARN  c.e.ParameterizedLoggingExample - User john_doe has 3 failed login attempts
+2026-07-01 22:22:07.992 [main] INFO  c.e.ParameterizedLoggingExample - Temperature: 23.5, Active status: true
+2026-07-01 22:22:07.997 [main] ERROR c.e.ParameterizedLoggingExample - Error during division: 10 / 0
+java.lang.ArithmeticException: / by zero
+	at com.example.ParameterizedLoggingExample.main(ParameterizedLoggingExample.java:25)
+	at com.example.AppTest.testParameterizedLogging(AppTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-07-01 22:22:07.999 [main] INFO  c.e.ParameterizedLoggingExample - User details: User{name='alice', age=25}
+2026-07-01 22:22:08.006 [main] INFO  com.example.AppenderExample - Application started with different appenders
+2026-07-01 22:22:08.006 [main] DEBUG com.example.AppenderExample - This is a debug message
+2026-07-01 22:22:08.006 [main] INFO  com.example.AppenderExample - This is an info message
+2026-07-01 22:22:08.006 [main] WARN  com.example.AppenderExample - This is a warning message
+2026-07-01 22:22:08.006 [main] ERROR com.example.AppenderExample - This is an error message
+2026-07-01 22:22:08.007 [main] INFO  com.example.AppenderExample - Processing order: ORD-12345 with amount: $150.5
+2026-07-01 22:22:08.007 [main] INFO  com.example.AppenderExample - Order ORD-12345 processed successfully
+2026-07-01 22:22:08.007 [main] INFO  com.example.AppenderExample - Processing order: ORD-12346 with amount: $275.3
+2026-07-01 22:22:08.007 [main] WARN  com.example.AppenderExample - Order ORD-12346 exceeds $200 threshold - requiring approval
+2026-07-01 22:22:08.008 [main] INFO  com.example.AppenderExample - Order ORD-12346 processed successfully
+2026-07-01 22:22:08.008 [main] INFO  com.example.AppenderExample - Processing order: ORD-12347 with amount: $-50.0
+2026-07-01 22:22:08.009 [main] ERROR com.example.AppenderExample - Invalid amount for order ORD-12347: $-50.0
