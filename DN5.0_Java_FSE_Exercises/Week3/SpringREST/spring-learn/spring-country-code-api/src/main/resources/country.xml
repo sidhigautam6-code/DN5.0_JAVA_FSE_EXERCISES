@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- ============================================================ -->
+    <!-- COUNTRY DATA CONFIGURATION                                    -->
+    <!-- These beans represent the four countries supported by the     -->
+    <!-- airlines website                                             -->
+    <!-- ============================================================ -->
+    
+    <!-- Country 1: India -->
+    <bean id="in" class="com.cognizant.springcountrycodeapi.Country">
+        <property name="code" value="IN"/>
+        <property name="name" value="India"/>
+    </bean>
+
+    <!-- Country 2: United States -->
+    <bean id="us" class="com.cognizant.springcountrycodeapi.Country">
+        <property name="code" value="US"/>
+        <property name="name" value="United States"/>
+    </bean>
+
+    <!-- Country 3: Germany -->
+    <bean id="de" class="com.cognizant.springcountrycodeapi.Country">
+        <property name="code" value="DE"/>
+        <property name="name" value="Germany"/>
+    </bean>
+
+    <!-- Country 4: Japan -->
+    <bean id="jp" class="com.cognizant.springcountrycodeapi.Country">
+        <property name="code" value="JP"/>
+        <property name="name" value="Japan"/>
+    </bean>
+
+    <!-- ============================================================ -->
+    <!-- COUNTRY LIST - Collection of all countries                   -->
+    <!-- This list is used by the CountryService to return all        -->
+    <!-- countries and to search for a specific country by code      -->
+    <!-- ============================================================ -->
+    <bean id="countryList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="in"/>
+                <ref bean="us"/>
+                <ref bean="de"/>
+                <ref bean="jp"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
