@@ -1,0 +1,113 @@
+/* src/CohortDetails.module.css */
+
+/* Container for the entire dashboard */
+.container {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid layout for cohorts */
+.cohortGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Main box styling - as per requirements */
+.box {
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for boxes */
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Cohort title styling */
+.cohortTitle {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* dt element styling - as per requirements */
+dt {
+    font-weight: 500;
+    color: #555;
+    margin-top: 8px;
+    float: left;
+    clear: left;
+    width: 120px;
+}
+
+/* dd element styling */
+dd {
+    margin-left: 130px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Details list styling */
+.detailsList {
+    margin: 0;
+    padding: 0;
+}
+
+/* Status badge styling */
+.statusBadge {
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+    
+    dt {
+        width: 100%;
+        float: none;
+        clear: none;
+    }
+    
+    dd {
+        margin-left: 0;
+    }
+}

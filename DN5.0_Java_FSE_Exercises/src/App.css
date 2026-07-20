@@ -1,26 +1,24 @@
 /* src/App.css */
 .App {
-    background-color: #f5f6fa;
+    text-align: center;
+    background-color: #f5f7fa;
     min-height: 100vh;
-    padding: 20px;
 }
 
-/* Animation for loading */
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Animation for status badges */
 @keyframes pulse {
-    0% { opacity: 0.6; }
+    0% { opacity: 0.8; }
     50% { opacity: 1; }
-    100% { opacity: 0.6; }
+    100% { opacity: 0.8; }
 }
 
-/* Hover effect for post cards */
-.post-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-/* Responsive design */
-@media (max-width: 600px) {
-    .App {
-        padding: 10px;
-    }
+.status-ongoing {
+    animation: pulse 2s infinite;
 }
