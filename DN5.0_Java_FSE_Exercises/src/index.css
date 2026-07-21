@@ -12,8 +12,6 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
 }
 
 code {
@@ -21,13 +19,17 @@ code {
         monospace;
 }
 
-/* Smooth scrolling */
+/* Global Styles */
 html {
     scroll-behavior: smooth;
 }
 
-/* Selection color */
 ::selection {
     background: #764ba2;
     color: white;
+}
+
+/* Smooth transitions */
+* {
+    transition: all 0.3s ease;
 }
