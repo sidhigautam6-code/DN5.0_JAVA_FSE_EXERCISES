@@ -1,0 +1,24 @@
+2026-07-25 10:00:00 INFO Application started
+2026-07-25 10:05:00 INFO User logged in
+2026-07-25 10:10:00 ERROR Connection failed
+2026-07-25 10:15:00 ERROR Timeout occurred
+2026-07-25 10:20:00 WARNING High memory usage
+2026-07-25 10:25:00 INFO User logged out
+2026-07-25 10:30:00 ERROR Database connection lost
+2026-07-25 10:35:00 INFO Reconnecting to database
+2026-07-25 10:40:00 ERROR Failed to send email
+2026-07-25 10:45:00 INFO Application shutdown
+
+DEBUG: Starting application...
+DEBUG: Loading configuration from .env file...
+DEBUG: Connecting to database...
+DEBUG: Database connection established
+DEBUG: Loading modules...
+DEBUG: Application started successfully
+INFO: Server running on port 8080
+
+INFO: User logged in - user123
+INFO: User logged out - user123
+INFO: Session expired - session_id_abc
+INFO: User logged in - user456
+INFO: User logged out - user456
