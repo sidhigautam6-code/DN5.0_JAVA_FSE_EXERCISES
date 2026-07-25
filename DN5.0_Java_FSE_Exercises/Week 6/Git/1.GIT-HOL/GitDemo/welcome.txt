@@ -1,0 +1,3 @@
+echo Welcome to Git Demo Project! > welcome.txt
+echo This is my first Git repository. >> welcome.txt
+echo Created on: %date% %time% >> welcome.txt
