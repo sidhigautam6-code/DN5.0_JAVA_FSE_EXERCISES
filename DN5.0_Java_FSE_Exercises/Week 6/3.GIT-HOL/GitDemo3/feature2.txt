@@ -1,0 +1,3 @@
+"Feature 2: Merging Demo" 
+"This file demonstrates merging capabilities." 
+"Will be merged to master." 

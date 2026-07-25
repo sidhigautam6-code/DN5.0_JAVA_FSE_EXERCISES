@@ -1,0 +1,6 @@
+"def main():" 
+"    print('Welcome to Git Branching Lab!')" 
+"    print('This demonstrates branching and merging.')" 
+"" 
+"if __name__ == '__main__':" 
+"    main()" 

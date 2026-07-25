@@ -1,0 +1,4 @@
+"Feature 1: Branching Demo" 
+"This file was created in GitNewBranch." 
+"Branch name: GitNewBranch" 
+"Created on: 26-07-2026  1:42:32.17" 

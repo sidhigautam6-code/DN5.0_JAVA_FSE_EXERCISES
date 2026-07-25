@@ -1,0 +1,5 @@
+"Branch Information" 
+"==================" 
+"Current Branch: GitNewBranch" 
+"Created from: master" 
+"Purpose: Demonstrating branching and merging" 

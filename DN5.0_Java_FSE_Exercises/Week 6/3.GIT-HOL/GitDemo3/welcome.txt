@@ -1,0 +1,6 @@
+Welcome to Git Branching Lab!
+This project demonstrates branching and merging.
+Created on: Sat 07/25/2026 23:20:00.00
+
+Updated in GitNewBranch!
+This shows how branches can have different content and can be merged back to the main branch.
