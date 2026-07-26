@@ -1,0 +1,6 @@
+"def main():" 
+"    print('Welcome to Git Conflict Resolution Lab!')" 
+"    print('This demonstrates merge conflict resolution.')" 
+"" 
+"if __name__ == '__main__':" 
+"    main()" 
