@@ -1,0 +1,6 @@
+"def main():" 
+"    print('Welcome to Git Cleanup Lab!')" 
+"    print('This demonstrates pushing to remote repository.')" 
+"" 
+"if __name__ == '__main__':" 
+"    main()" 
