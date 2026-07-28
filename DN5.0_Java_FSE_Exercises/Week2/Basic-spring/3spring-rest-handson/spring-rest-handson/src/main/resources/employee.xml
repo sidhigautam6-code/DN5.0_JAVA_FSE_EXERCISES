@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Enable component scanning -->
+    <context:component-scan base-package="com.cognizant.employeemgmt"/>
+
+    <!-- ============================================ -->
+    <!-- SKILLS DEFINITION                            -->
+    <!-- ============================================ -->
+    <bean id="javaSkill" class="com.cognizant.employeemgmt.model.Skill">
+        <property name="id" value="1"/>
+        <property name="name" value="Java"/>
+    </bean>
+
+    <bean id="springSkill" class="com.cognizant.employeemgmt.model.Skill">
+        <property name="id" value="2"/>
+        <property name="name" value="Spring"/>
+    </bean>
+
+    <bean id="angularSkill" class="com.cognizant.employeemgmt.model.Skill">
+        <property name="id" value="3"/>
+        <property name="name" value="Angular"/>
+    </bean>
+
+    <bean id="reactSkill" class="com.cognizant.employeemgmt.model.Skill">
+        <property name="id" value="4"/>
+        <property name="name" value="React"/>
+    </bean>
+
+    <bean id="sqlSkill" class="com.cognizant.employeemgmt.model.Skill">
+        <property name="id" value="5"/>
+        <property name="name" value="SQL"/>
+    </bean>
+
+    <bean id="mongodbSkill" class="com.cognizant.employeemgmt.model.Skill">
+        <property name="id" value="6"/>
+        <property name="name" value="MongoDB"/>
+    </bean>
+
+    <bean id="awsSkill" class="com.cognizant.employeemgmt.model.Skill">
+        <property name="id" value="7"/>
+        <property name="name" value="AWS"/>
+    </bean>
+
+    <bean id="dockerSkill" class="com.cognizant.employeemgmt.model.Skill">
+        <property name="id" value="8"/>
+        <property name="name" value="Docker"/>
+    </bean>
+
+    <!-- ============================================ -->
+    <!-- DEPARTMENTS DEFINITION                       -->
+    <!-- ============================================ -->
+    <bean id="itDepartment" class="com.cognizant.employeemgmt.model.Department">
+        <property name="id" value="1"/>
+        <property name="name" value="Information Technology"/>
+    </bean>
+
+    <bean id="hrDepartment" class="com.cognizant.employeemgmt.model.Department">
+        <property name="id" value="2"/>
+        <property name="name" value="Human Resources"/>
+    </bean>
+
+    <bean id="financeDepartment" class="com.cognizant.employeemgmt.model.Department">
+        <property name="id" value="3"/>
+        <property name="name" value="Finance"/>
+    </bean>
+
+    <bean id="marketingDepartment" class="com.cognizant.employeemgmt.model.Department">
+        <property name="id" value="4"/>
+        <property name="name" value="Marketing"/>
+    </bean>
+
+    <bean id="salesDepartment" class="com.cognizant.employeemgmt.model.Department">
+        <property name="id" value="5"/>
+        <property name="name" value="Sales"/>
+    </bean>
+
+    <!-- ============================================ -->
+    <!-- EMPLOYEES DEFINITION                         -->
+    <!-- ============================================ -->
+    <bean id="employee1" class="com.cognizant.employeemgmt.model.Employee">
+        <property name="id" value="1"/>
+        <property name="firstName" value="John"/>
+        <property name="lastName" value="Doe"/>
+        <property name="email" value="john.doe@company.com"/>
+        <property name="phone" value="+1-555-0101"/>
+        <property name="department" ref="itDepartment"/>
+        <property name="skills">
+            <list>
+                <ref bean="javaSkill"/>
+                <ref bean="springSkill"/>
+                <ref bean="angularSkill"/>
+            </list>
+        </property>
+        <property name="active" value="true"/>
+        <property name="joiningDate" value="2023-01-15"/>
+        <property name="salary" value="75000"/>
+    </bean>
+
+    <bean id="employee2" class="com.cognizant.employeemgmt.model.Employee">
+        <property name="id" value="2"/>
+        <property name="firstName" value="Jane"/>
+        <property name="lastName" value="Smith"/>
+        <property name="email" value="jane.smith@company.com"/>
+        <property name="phone" value="+1-555-0102"/>
+        <property name="department" ref="hrDepartment"/>
+        <property name="skills">
+            <list>
+                <ref bean="sqlSkill"/>
+                <ref bean="reactSkill"/>
+            </list>
+        </property>
+        <property name="active" value="true"/>
+        <property name="joiningDate" value="2023-02-20"/>
+        <property name="salary" value="65000"/>
+    </bean>
+
+    <bean id="employee3" class="com.cognizant.employeemgmt.model.Employee">
+        <property name="id" value="3"/>
+        <property name="firstName" value="Robert"/>
+        <property name="lastName" value="Johnson"/>
+        <property name="email" value="robert.johnson@company.com"/>
+        <property name="phone" value="+1-555-0103"/>
+        <property name="department" ref="financeDepartment"/>
+        <property name="skills">
+            <list>
+                <ref bean="sqlSkill"/>
+                <ref bean="mongodbSkill"/>
+            </list>
+        </property>
+        <property name="active" value="true"/>
+        <property name="joiningDate" value="2023-03-10"/>
+        <property name="salary" value="82000"/>
+    </bean>
+
+    <bean id="employee4" class="com.cognizant.employeemgmt.model.Employee">
+        <property name="id" value="4"/>
+        <property name="firstName" value="Maria"/>
+        <property name="lastName" value="Garcia"/>
+        <property name="email" value="maria.garcia@company.com"/>
+        <property name="phone" value="+1-555-0104"/>
+        <property name="department" ref="marketingDepartment"/>
+        <property name="skills">
+            <list>
+                <ref bean="angularSkill"/>
+                <ref bean="reactSkill"/>
+            </list>
+        </property>
+        <property name="active" value="true"/>
+        <property name="joiningDate" value="2023-04-05"/>
+        <property name="salary" value="70000"/>
+    </bean>
+
+    <bean id="employee5" class="com.cognizant.employeemgmt.model.Employee">
+        <property name="id" value="5"/>
+        <property name="firstName" value="David"/>
+        <property name="lastName" value="Brown"/>
+        <property name="email" value="david.brown@company.com"/>
+        <property name="phone" value="+1-555-0105"/>
+        <property name="department" ref="salesDepartment"/>
+        <property name="skills">
+            <list>
+                <ref bean="javaSkill"/>
+                <ref bean="awsSkill"/>
+                <ref bean="dockerSkill"/>
+            </list>
+        </property>
+        <property name="active" value="true"/>
+        <property name="joiningDate" value="2023-05-12"/>
+        <property name="salary" value="95000"/>
+    </bean>
+
+    <bean id="employee6" class="com.cognizant.employeemgmt.model.Employee">
+        <property name="id" value="6"/>
+        <property name="firstName" value="Sarah"/>
+        <property name="lastName" value="Wilson"/>
+        <property name="email" value="sarah.wilson@company.com"/>
+        <property name="phone" value="+1-555-0106"/>
+        <property name="department" ref="itDepartment"/>
+        <property name="skills">
+            <list>
+                <ref bean="springSkill"/>
+                <ref bean="sqlSkill"/>
+            </list>
+        </property>
+        <property name="active" value="false"/>
+        <property name="joiningDate" value="2023-06-01"/>
+        <property name="salary" value="68000"/>
+    </bean>
+
+    <!-- ============================================ -->
+    <!-- EMPLOYEE LIST - Contains all employees       -->
+    <!-- ============================================ -->
+    <bean id="employeeList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="employee1"/>
+                <ref bean="employee2"/>
+                <ref bean="employee3"/>
+                <ref bean="employee4"/>
+                <ref bean="employee5"/>
+                <ref bean="employee6"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <!-- ============================================ -->
+    <!-- DEPARTMENT LIST - Contains all departments   -->
+    <!-- ============================================ -->
+    <bean id="departmentList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="itDepartment"/>
+                <ref bean="hrDepartment"/>
+                <ref bean="financeDepartment"/>
+                <ref bean="marketingDepartment"/>
+                <ref bean="salesDepartment"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
