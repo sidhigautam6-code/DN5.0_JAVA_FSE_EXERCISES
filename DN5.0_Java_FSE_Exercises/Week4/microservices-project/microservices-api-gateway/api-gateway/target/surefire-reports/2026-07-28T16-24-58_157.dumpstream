@@ -1,0 +1,15 @@
+# Created at 2026-07-28T16:25:10.585
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+
+# Created at 2026-07-28T16:25:13.001
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+
+# Created at 2026-07-28T16:25:13.001
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by io.netty.util.internal.PlatformDependent0$4 (file:/C:/Users/HP/.m2/repository/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.jar)
+
+# Created at 2026-07-28T16:25:13.001
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$4
+
+# Created at 2026-07-28T16:25:13.002
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+

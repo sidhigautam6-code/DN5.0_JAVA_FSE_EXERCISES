@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.cognizant.apigateway.ApiGatewayApplicationTests" time="3.914" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\HP\OneDrive\Desktop\microservices-api-gateway\api-gateway\target\test-classes;C:\Users\HP\OneDrive\Desktop\microservices-api-gateway\api-gateway\target\classes;C:\Users\HP\.m2\repository\org\springframework\cloud\spring-cloud-starter-gateway\3.1.3\spring-cloud-starter-gateway-3.1.3.jar;C:\Users\HP\.m2\repository\org\springframework\cloud\spring-cloud-starter\3.1.3\spring-cloud-starter-3.1.3.jar;C:\Users\HP\.m2\repository\org\springframework\cloud\spring-cloud-context\3.1.3\spring-cloud-context-3.1.3.jar;C:\Users\HP\.m2\repository\org\springframework\security\spring-security-crypto\5.7.1\spring-security-crypto-5.7.1.jar;C:\Users\HP\.m2\repository\org\springframework\cloud\spring-cloud-commons\3.1.3\spring-cloud-commons-3.1.3.jar;C:\Users\HP\.m2\repository\org\springframework\security\spring-security-rsa\1.0.10.RELEASE\spring-security-rsa-1.0.10.RELEASE.jar;C:\Users\HP\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\HP\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\HP\.m2\repository\org\springframework\cloud\spring-cloud-gateway-server\3.1.3\spring-cloud-gateway-server-3.1.3.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.7.0\spring-boot-starter-validation-2.7.0.jar;C:\Users\HP\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.63\tomcat-embed-el-9.0.63.jar;C:\Users\HP\.m2\repository\org\hibernate\validator\hibernate-validator\6.2.3.Final\hibernate-validator-6.2.3.Final.jar;C:\Users\HP\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\HP\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\HP\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\HP\.m2\repository\io\projectreactor\addons\reactor-extra\3.4.8\reactor-extra-3.4.8.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-webflux\2.7.0\spring-boot-starter-webflux-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter\2.7.0\spring-boot-starter-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.7.0\spring-boot-starter-logging-2.7.0.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.2\log4j-to-slf4j-2.17.2.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\HP\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar;C:\Users\HP\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\HP\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.7.0\spring-boot-starter-json-2.7.0.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.13.3\jackson-datatype-jdk8-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.3\jackson-datatype-jsr310-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.13.3\jackson-module-parameter-names-2.13.3.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-reactor-netty\2.7.0\spring-boot-starter-reactor-netty-2.7.0.jar;C:\Users\HP\.m2\repository\io\projectreactor\netty\reactor-netty-http\1.0.19\reactor-netty-http-1.0.19.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http\4.1.77.Final\netty-codec-http-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-common\4.1.77.Final\netty-common-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-buffer\4.1.77.Final\netty-buffer-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport\4.1.77.Final\netty-transport-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec\4.1.77.Final\netty-codec-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler\4.1.77.Final\netty-handler-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http2\4.1.77.Final\netty-codec-http2-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns\4.1.77.Final\netty-resolver-dns-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver\4.1.77.Final\netty-resolver-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-dns\4.1.77.Final\netty-codec-dns-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.77.Final\netty-resolver-dns-native-macos-4.1.77.Final-osx-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.77.Final\netty-resolver-dns-classes-macos-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-epoll\4.1.77.Final\netty-transport-native-epoll-4.1.77.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.77.Final\netty-transport-native-unix-common-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.77.Final\netty-transport-classes-epoll-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\projectreactor\netty\reactor-netty-core\1.0.19\reactor-netty-core-1.0.19.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler-proxy\4.1.77.Final\netty-handler-proxy-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-socks\4.1.77.Final\netty-codec-socks-4.1.77.Final.jar;C:\Users\HP\.m2\repository\org\springframework\spring-web\5.3.20\spring-web-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-beans\5.3.20\spring-beans-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-webflux\5.3.20\spring-webflux-5.3.20.jar;C:\Users\HP\.m2\repository\io\projectreactor\reactor-core\3.4.18\reactor-core-3.4.18.jar;C:\Users\HP\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-devtools\2.7.0\spring-boot-devtools-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot\2.7.0\spring-boot-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\spring-context\5.3.20\spring-context-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-aop\5.3.20\spring-aop-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-expression\5.3.20\spring-expression-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.7.0\spring-boot-autoconfigure-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\2.7.0\spring-boot-starter-actuator-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\2.7.0\spring-boot-actuator-autoconfigure-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-actuator\2.7.0\spring-boot-actuator-2.7.0.jar;C:\Users\HP\.m2\repository\io\micrometer\micrometer-core\1.9.0\micrometer-core-1.9.0.jar;C:\Users\HP\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\HP\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.7.0\spring-boot-starter-test-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-test\2.7.0\spring-boot-test-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.7.0\spring-boot-test-autoconfigure-2.7.0.jar;C:\Users\HP\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\HP\.m2\repository\net\minidev\json-smart\2.4.8\json-smart-2.4.8.jar;C:\Users\HP\.m2\repository\net\minidev\accessors-smart\2.4.8\accessors-smart-2.4.8.jar;C:\Users\HP\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\HP\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\HP\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\HP\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\HP\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\HP\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\HP\.m2\repository\org\mockito\mockito-core\4.5.1\mockito-core-4.5.1.jar;C:\Users\HP\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\HP\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.10\byte-buddy-agent-1.12.10.jar;C:\Users\HP\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\HP\.m2\repository\org\mockito\mockito-junit-jupiter\4.5.1\mockito-junit-jupiter-4.5.1.jar;C:\Users\HP\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\HP\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\HP\.m2\repository\org\springframework\spring-core\5.3.20\spring-core-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-jcl\5.3.20\spring-jcl-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-test\5.3.20\spring-test-5.3.20.jar;C:\Users\HP\.m2\repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\HP\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\25\bin"/>
+    <property name="sun.java.command" value="C:\Users\HP\AppData\Local\Temp\surefire978774222357688615\surefirebooter9436429256941994449.jar C:\Users\HP\AppData\Local\Temp\surefire978774222357688615 2026-07-28T16-24-58_157-jvmRun1 surefire5796490245494244857tmp surefire_03962381058519611233tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\HP\OneDrive\Desktop\microservices-api-gateway\api-gateway\target\test-classes;C:\Users\HP\OneDrive\Desktop\microservices-api-gateway\api-gateway\target\classes;C:\Users\HP\.m2\repository\org\springframework\cloud\spring-cloud-starter-gateway\3.1.3\spring-cloud-starter-gateway-3.1.3.jar;C:\Users\HP\.m2\repository\org\springframework\cloud\spring-cloud-starter\3.1.3\spring-cloud-starter-3.1.3.jar;C:\Users\HP\.m2\repository\org\springframework\cloud\spring-cloud-context\3.1.3\spring-cloud-context-3.1.3.jar;C:\Users\HP\.m2\repository\org\springframework\security\spring-security-crypto\5.7.1\spring-security-crypto-5.7.1.jar;C:\Users\HP\.m2\repository\org\springframework\cloud\spring-cloud-commons\3.1.3\spring-cloud-commons-3.1.3.jar;C:\Users\HP\.m2\repository\org\springframework\security\spring-security-rsa\1.0.10.RELEASE\spring-security-rsa-1.0.10.RELEASE.jar;C:\Users\HP\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\HP\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\HP\.m2\repository\org\springframework\cloud\spring-cloud-gateway-server\3.1.3\spring-cloud-gateway-server-3.1.3.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.7.0\spring-boot-starter-validation-2.7.0.jar;C:\Users\HP\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.63\tomcat-embed-el-9.0.63.jar;C:\Users\HP\.m2\repository\org\hibernate\validator\hibernate-validator\6.2.3.Final\hibernate-validator-6.2.3.Final.jar;C:\Users\HP\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\HP\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\HP\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\HP\.m2\repository\io\projectreactor\addons\reactor-extra\3.4.8\reactor-extra-3.4.8.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-webflux\2.7.0\spring-boot-starter-webflux-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter\2.7.0\spring-boot-starter-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.7.0\spring-boot-starter-logging-2.7.0.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\HP\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.2\log4j-to-slf4j-2.17.2.jar;C:\Users\HP\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\HP\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar;C:\Users\HP\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\HP\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.7.0\spring-boot-starter-json-2.7.0.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.13.3\jackson-datatype-jdk8-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.3\jackson-datatype-jsr310-2.13.3.jar;C:\Users\HP\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.13.3\jackson-module-parameter-names-2.13.3.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-reactor-netty\2.7.0\spring-boot-starter-reactor-netty-2.7.0.jar;C:\Users\HP\.m2\repository\io\projectreactor\netty\reactor-netty-http\1.0.19\reactor-netty-http-1.0.19.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http\4.1.77.Final\netty-codec-http-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-common\4.1.77.Final\netty-common-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-buffer\4.1.77.Final\netty-buffer-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport\4.1.77.Final\netty-transport-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec\4.1.77.Final\netty-codec-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler\4.1.77.Final\netty-handler-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-http2\4.1.77.Final\netty-codec-http2-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns\4.1.77.Final\netty-resolver-dns-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver\4.1.77.Final\netty-resolver-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-dns\4.1.77.Final\netty-codec-dns-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.77.Final\netty-resolver-dns-native-macos-4.1.77.Final-osx-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.77.Final\netty-resolver-dns-classes-macos-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-epoll\4.1.77.Final\netty-transport-native-epoll-4.1.77.Final-linux-x86_64.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.77.Final\netty-transport-native-unix-common-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.77.Final\netty-transport-classes-epoll-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\projectreactor\netty\reactor-netty-core\1.0.19\reactor-netty-core-1.0.19.jar;C:\Users\HP\.m2\repository\io\netty\netty-handler-proxy\4.1.77.Final\netty-handler-proxy-4.1.77.Final.jar;C:\Users\HP\.m2\repository\io\netty\netty-codec-socks\4.1.77.Final\netty-codec-socks-4.1.77.Final.jar;C:\Users\HP\.m2\repository\org\springframework\spring-web\5.3.20\spring-web-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-beans\5.3.20\spring-beans-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-webflux\5.3.20\spring-webflux-5.3.20.jar;C:\Users\HP\.m2\repository\io\projectreactor\reactor-core\3.4.18\reactor-core-3.4.18.jar;C:\Users\HP\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-devtools\2.7.0\spring-boot-devtools-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot\2.7.0\spring-boot-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\spring-context\5.3.20\spring-context-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-aop\5.3.20\spring-aop-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-expression\5.3.20\spring-expression-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.7.0\spring-boot-autoconfigure-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\2.7.0\spring-boot-starter-actuator-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\2.7.0\spring-boot-actuator-autoconfigure-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-actuator\2.7.0\spring-boot-actuator-2.7.0.jar;C:\Users\HP\.m2\repository\io\micrometer\micrometer-core\1.9.0\micrometer-core-1.9.0.jar;C:\Users\HP\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\HP\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.7.0\spring-boot-starter-test-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-test\2.7.0\spring-boot-test-2.7.0.jar;C:\Users\HP\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.7.0\spring-boot-test-autoconfigure-2.7.0.jar;C:\Users\HP\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\HP\.m2\repository\net\minidev\json-smart\2.4.8\json-smart-2.4.8.jar;C:\Users\HP\.m2\repository\net\minidev\accessors-smart\2.4.8\accessors-smart-2.4.8.jar;C:\Users\HP\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\HP\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\HP\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\HP\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\HP\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\HP\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\HP\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\HP\.m2\repository\org\mockito\mockito-core\4.5.1\mockito-core-4.5.1.jar;C:\Users\HP\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\HP\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.10\byte-buddy-agent-1.12.10.jar;C:\Users\HP\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\HP\.m2\repository\org\mockito\mockito-junit-jupiter\4.5.1\mockito-junit-jupiter-4.5.1.jar;C:\Users\HP\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\HP\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\HP\.m2\repository\org\springframework\spring-core\5.3.20\spring-core-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-jcl\5.3.20\spring-jcl-5.3.20.jar;C:\Users\HP\.m2\repository\org\springframework\spring-test\5.3.20\spring-test-5.3.20.jar;C:\Users\HP\.m2\repository\org\xmlunit\xmlunit-core\2.9.0\xmlunit-core-2.9.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\HP"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-07-21"/>
+    <property name="java.home" value="C:\Users\HP\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\25"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\HP\OneDrive\Desktop\microservices-api-gateway\api-gateway"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\HP\AppData\Local\Temp\surefire978774222357688615\surefirebooter9436429256941994449.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.4+7-LTS"/>
+    <property name="user.name" value="HP"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-25.0.4+7"/>
+    <property name="localRepository" value="C:\Users\HP\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\HP\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.4"/>
+    <property name="user.dir" value="C:\Users\HP\OneDrive\Desktop\microservices-api-gateway\api-gateway"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\HP\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\25\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Users\HP\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\gradle\latest\bin;C:\Users\HP\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\maven\latest\bin;c:\Users\HP\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\HP\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\HP\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\25\bin;C:\Program Files\Microsoft\jdk-21.0.11.10-hotspot\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;C:\Users\HP\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HP\AppData\Local\Python\bin;C:\Users\HP\AppData\Local\Programs\Ollama;C:\Users\HP\AppData\Local\Microsoft\WinGet\Packages\oschwartz10612.Poppler_Microsoft.Winget.Source_8wekyb3d8bbwe\poppler-25.07.0\Library\bin;C:\Users\HP\AppData\Roaming\npm;c:\Users\HP\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="25.0.4+7-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="contextLoads" classname="com.cognizant.apigateway.ApiGatewayApplicationTests" time="0.001">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'statuses' to org.springframework.http.HttpStatus[]
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [org.springframework.http.HttpStatus] for value '500'; nested exception is java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.500
+Caused by: java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.500
+</error>
+    <system-out><![CDATA[16:25:11.167 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:25:11.177 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:25:11.219 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.cognizant.apigateway.ApiGatewayApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:25:11.231 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cognizant.apigateway.ApiGatewayApplicationTests], using SpringBootContextLoader
+16:25:11.235 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.cognizant.apigateway.ApiGatewayApplicationTests]: class path resource [com/cognizant/apigateway/ApiGatewayApplicationTests-context.xml] does not exist
+16:25:11.236 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.cognizant.apigateway.ApiGatewayApplicationTests]: class path resource [com/cognizant/apigateway/ApiGatewayApplicationTestsContext.groovy] does not exist
+16:25:11.237 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.cognizant.apigateway.ApiGatewayApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:25:11.237 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cognizant.apigateway.ApiGatewayApplicationTests]: ApiGatewayApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:25:11.277 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.cognizant.apigateway.ApiGatewayApplicationTests]
+16:25:11.355 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\HP\OneDrive\Desktop\microservices-api-gateway\api-gateway\target\classes\com\cognizant\apigateway\ApiGatewayApplication.class]
+16:25:11.356 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cognizant.apigateway.ApiGatewayApplication for test class com.cognizant.apigateway.ApiGatewayApplicationTests
+16:25:11.425 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.cognizant.apigateway.ApiGatewayApplicationTests]: using defaults.
+16:25:11.425 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:25:11.433 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+16:25:11.434 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+16:25:11.435 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+16:25:11.435 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3576ddc2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@35b74c5c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2e570ded, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@b86de0d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@81d9a72, org.springframework.test.context.event.EventPublishingTestExecutionListener@747f281, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1169afe1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2ca26d77, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4808bc9b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@70e38ce1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2ca923bb, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@13df2a8c]
+16:25:11.439 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6f8e8894 testClass = ApiGatewayApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@3cfdd820 testClass = ApiGatewayApplicationTests, locations = '{}', classes = '{class com.cognizant.apigateway.ApiGatewayApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6025e1b6, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5b12b668, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@477b4cdf, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@185a6e9, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7eac9008, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@752325ad, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@8bd1b6a], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+16:25:11.454 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@6f8e8894 testClass = ApiGatewayApplicationTests, testInstance = com.cognizant.apigateway.ApiGatewayApplicationTests@6f1c29b7, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@3cfdd820 testClass = ApiGatewayApplicationTests, locations = '{}', classes = '{class com.cognizant.apigateway.ApiGatewayApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6025e1b6, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5b12b668, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@477b4cdf, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@185a6e9, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7eac9008, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@752325ad, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@8bd1b6a], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.0)
+
+2026-07-28 16:25:11 - Starting ApiGatewayApplicationTests using Java 25.0.4 on Siddzz with PID 4300 (started by HP in C:\Users\HP\OneDrive\Desktop\microservices-api-gateway\api-gateway)
+2026-07-28 16:25:11 - Running with Spring Boot v2.7.0, Spring v5.3.20
+2026-07-28 16:25:11 - No active profile set, falling back to 1 default profile: "default"
+2026-07-28 16:25:12 - BeanFactory id=ea8188ee-355d-37d3-9f7f-e23b8442b5ec
+2026-07-28 16:25:13 - Routes supplied from Gateway Properties: [RouteDefinition{id='external-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/external/**}}], filters=[], uri=https://jsonplaceholder.typicode.com, order=0, metadata={}}, RouteDefinition{id='local-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/local/**}}], filters=[], uri=http://localhost:8080, order=0, metadata={}}, RouteDefinition{id='httpbin-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/httpbin/**}}], filters=[FilterDefinition{name='RewritePath', args={regexp=/httpbin/?(?<remaining>.*), replacement=/${remaining}}}], uri=http://httpbin.org, order=0, metadata={}}, RouteDefinition{id='greet-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/greet/**}}], filters=[FilterDefinition{name='RewritePath', args={regexp=/greet/?(?<remaining>.*), replacement=/${remaining}}}, FilterDefinition{name='AddRequestHeader', args={name=X-Gateway-Custom-Header, value=HelloFromGateway}}], uri=http://httpbin.org, order=0, metadata={}}, RouteDefinition{id='retry-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/retry/**}}], filters=[FilterDefinition{name='RewritePath', args={regexp=/retry/?(?<remaining>.*), replacement=/${remaining}}}, FilterDefinition{name='Retry', args={retries=3, statuses=500,503, methods=GET,POST, series=SERVER_ERROR}}], uri=http://httpbin.org, order=0, metadata={}}, RouteDefinition{id='timeout-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/timeout/**}}], filters=[FilterDefinition{name='RewritePath', args={regexp=/timeout/?(?<remaining>.*), replacement=/${remaining}}}], uri=http://httpbin.org, order=0, metadata={}}]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [After]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [Before]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [Between]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [Cookie]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [Header]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [Host]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [Method]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [Path]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [Query]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [ReadBody]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [RemoteAddr]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [Weight]
+2026-07-28 16:25:13 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-07-28 16:25:13 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-07-28 16:25:13 - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-07-28 16:25:13 - ControllerAdvice beans: none
+2026-07-28 16:25:14 - RouteDefinition external-service applying {_genkey_0=/api/external/**} to Path
+2026-07-28 16:25:14 - RouteDefinition matched: external-service
+2026-07-28 16:25:14 - RouteDefinition local-service applying {_genkey_0=/api/local/**} to Path
+2026-07-28 16:25:14 - RouteDefinition matched: local-service
+2026-07-28 16:25:14 - RouteDefinition httpbin-service applying {_genkey_0=/httpbin/**} to Path
+2026-07-28 16:25:14 - RouteDefinition httpbin-service applying filter {regexp=/httpbin/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:14 - RouteDefinition matched: httpbin-service
+2026-07-28 16:25:14 - RouteDefinition greet-service applying {_genkey_0=/greet/**} to Path
+2026-07-28 16:25:14 - RouteDefinition greet-service applying filter {regexp=/greet/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:14 - RouteDefinition greet-service applying filter {name=X-Gateway-Custom-Header, value=HelloFromGateway} to AddRequestHeader
+2026-07-28 16:25:14 - RouteDefinition matched: greet-service
+2026-07-28 16:25:14 - RouteDefinition retry-service applying {_genkey_0=/retry/**} to Path
+2026-07-28 16:25:14 - RouteDefinition retry-service applying filter {regexp=/retry/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:14 - RouteDefinition retry-service applying filter {retries=3, statuses=500,503, methods=GET,POST, series=SERVER_ERROR} to Retry
+2026-07-28 16:25:14 - Refresh routes error !!!
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'statuses' to org.springframework.http.HttpStatus[]
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:384)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:344)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$4(Binder.java:469)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:95)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:83)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:59)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:473)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:587)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:573)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$300(Binder.java:534)
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:471)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:411)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:340)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:329)
+	at org.springframework.boot.context.properties.bind.Binder.bindOrCreate(Binder.java:321)
+	at org.springframework.boot.context.properties.bind.Binder.bindOrCreate(Binder.java:306)
+	at org.springframework.cloud.gateway.support.ConfigurationService.bindOrCreate(ConfigurationService.java:100)
+	at org.springframework.cloud.gateway.support.ConfigurationService$ConfigurableBuilder.doBind(ConfigurationService.java:149)
+	at org.springframework.cloud.gateway.support.ConfigurationService$AbstractBuilder.bind(ConfigurationService.java:244)
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.loadGatewayFilters(RouteDefinitionRouteLocator.java:144)
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.getFilters(RouteDefinitionRouteLocator.java:176)
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.convertToRoute(RouteDefinitionRouteLocator.java:117)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmitScalar(FluxFlatMap.java:488)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:421)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.drain(FluxMergeSequential.java:432)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.innerComplete(FluxMergeSequential.java:328)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialInner.onSubscribe(FluxMergeSequential.java:552)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8469)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:237)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:198)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8469)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:237)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:198)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4515)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4371)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4307)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4279)
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:81)
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:40)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:73)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:50)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:315)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [org.springframework.http.HttpStatus] for value '500'; nested exception is java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.500
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192)
+	at org.springframework.core.convert.support.StringToArrayConverter.convert(StringToArrayConverter.java:72)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:109)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:100)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.convert(IndexedElementsBinder.java:142)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindValue(IndexedElementsBinder.java:95)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:83)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:70)
+	at org.springframework.boot.context.properties.bind.ArrayBinder.bindAggregate(ArrayBinder.java:46)
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:435)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:587)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:534)
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:435)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:396)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:340)
+	... 137 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.500
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at org.springframework.core.convert.support.StringToEnumConverterFactory$StringToEnum.convert(StringToEnumConverterFactory.java:54)
+	at org.springframework.core.convert.support.StringToEnumConverterFactory$StringToEnum.convert(StringToEnumConverterFactory.java:39)
+	at org.springframework.core.convert.support.GenericConversionService$ConverterFactoryAdapter.convert(GenericConversionService.java:437)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	... 155 common frames omitted
+2026-07-28 16:25:14 - RouteDefinition external-service applying {_genkey_0=/api/external/**} to Path
+2026-07-28 16:25:14 - RouteDefinition matched: external-service
+2026-07-28 16:25:14 - RouteDefinition local-service applying {_genkey_0=/api/local/**} to Path
+2026-07-28 16:25:14 - RouteDefinition matched: local-service
+2026-07-28 16:25:14 - RouteDefinition httpbin-service applying {_genkey_0=/httpbin/**} to Path
+2026-07-28 16:25:14 - RouteDefinition httpbin-service applying filter {regexp=/httpbin/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:14 - RouteDefinition matched: httpbin-service
+2026-07-28 16:25:14 - RouteDefinition greet-service applying {_genkey_0=/greet/**} to Path
+2026-07-28 16:25:14 - RouteDefinition greet-service applying filter {regexp=/greet/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:14 - RouteDefinition greet-service applying filter {name=X-Gateway-Custom-Header, value=HelloFromGateway} to AddRequestHeader
+2026-07-28 16:25:14 - RouteDefinition matched: greet-service
+2026-07-28 16:25:14 - RouteDefinition retry-service applying {_genkey_0=/retry/**} to Path
+2026-07-28 16:25:14 - RouteDefinition retry-service applying filter {regexp=/retry/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:14 - RouteDefinition retry-service applying filter {retries=3, statuses=500,503, methods=GET,POST, series=SERVER_ERROR} to Retry
+2026-07-28 16:25:14 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-07-28 16:25:14 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'statuses' to org.springframework.http.HttpStatus[]:
+
+    Property: statuses
+    Value: 500,503
+    Origin: "statuses" from property source "source"
+    Reason: failed to convert java.lang.String to org.springframework.http.HttpStatus (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.500)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    100 CONTINUE
+    101 SWITCHING_PROTOCOLS
+    102 PROCESSING
+    103 CHECKPOINT
+    200 OK
+    201 CREATED
+    202 ACCEPTED
+    203 NON_AUTHORITATIVE_INFORMATION
+    204 NO_CONTENT
+    205 RESET_CONTENT
+    206 PARTIAL_CONTENT
+    207 MULTI_STATUS
+    208 ALREADY_REPORTED
+    226 IM_USED
+    300 MULTIPLE_CHOICES
+    301 MOVED_PERMANENTLY
+    302 FOUND
+    302 MOVED_TEMPORARILY
+    303 SEE_OTHER
+    304 NOT_MODIFIED
+    305 USE_PROXY
+    307 TEMPORARY_REDIRECT
+    308 PERMANENT_REDIRECT
+    400 BAD_REQUEST
+    401 UNAUTHORIZED
+    402 PAYMENT_REQUIRED
+    403 FORBIDDEN
+    404 NOT_FOUND
+    405 METHOD_NOT_ALLOWED
+    406 NOT_ACCEPTABLE
+    407 PROXY_AUTHENTICATION_REQUIRED
+    408 REQUEST_TIMEOUT
+    409 CONFLICT
+    410 GONE
+    411 LENGTH_REQUIRED
+    412 PRECONDITION_FAILED
+    413 PAYLOAD_TOO_LARGE
+    413 REQUEST_ENTITY_TOO_LARGE
+    414 REQUEST_URI_TOO_LONG
+    414 URI_TOO_LONG
+    415 UNSUPPORTED_MEDIA_TYPE
+    416 REQUESTED_RANGE_NOT_SATISFIABLE
+    417 EXPECTATION_FAILED
+    418 I_AM_A_TEAPOT
+    419 INSUFFICIENT_SPACE_ON_RESOURCE
+    420 METHOD_FAILURE
+    421 DESTINATION_LOCKED
+    422 UNPROCESSABLE_ENTITY
+    423 LOCKED
+    424 FAILED_DEPENDENCY
+    425 TOO_EARLY
+    426 UPGRADE_REQUIRED
+    428 PRECONDITION_REQUIRED
+    429 TOO_MANY_REQUESTS
+    431 REQUEST_HEADER_FIELDS_TOO_LARGE
+    451 UNAVAILABLE_FOR_LEGAL_REASONS
+    500 INTERNAL_SERVER_ERROR
+    501 NOT_IMPLEMENTED
+    502 BAD_GATEWAY
+    503 SERVICE_UNAVAILABLE
+    504 GATEWAY_TIMEOUT
+    505 HTTP_VERSION_NOT_SUPPORTED
+    506 VARIANT_ALSO_NEGOTIATES
+    507 INSUFFICIENT_STORAGE
+    508 LOOP_DETECTED
+    509 BANDWIDTH_LIMIT_EXCEEDED
+    510 NOT_EXTENDED
+    511 NETWORK_AUTHENTICATION_REQUIRED
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.0)
+
+2026-07-28 16:25:14 - Starting ApiGatewayApplicationTests using Java 25.0.4 on Siddzz with PID 4300 (started by HP in C:\Users\HP\OneDrive\Desktop\microservices-api-gateway\api-gateway)
+2026-07-28 16:25:14 - Running with Spring Boot v2.7.0, Spring v5.3.20
+2026-07-28 16:25:14 - No active profile set, falling back to 1 default profile: "default"
+2026-07-28 16:25:14 - BeanFactory id=ea8188ee-355d-37d3-9f7f-e23b8442b5ec
+2026-07-28 16:25:14 - Routes supplied from Gateway Properties: [RouteDefinition{id='external-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/external/**}}], filters=[], uri=https://jsonplaceholder.typicode.com, order=0, metadata={}}, RouteDefinition{id='local-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/local/**}}], filters=[], uri=http://localhost:8080, order=0, metadata={}}, RouteDefinition{id='httpbin-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/httpbin/**}}], filters=[FilterDefinition{name='RewritePath', args={regexp=/httpbin/?(?<remaining>.*), replacement=/${remaining}}}], uri=http://httpbin.org, order=0, metadata={}}, RouteDefinition{id='greet-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/greet/**}}], filters=[FilterDefinition{name='RewritePath', args={regexp=/greet/?(?<remaining>.*), replacement=/${remaining}}}, FilterDefinition{name='AddRequestHeader', args={name=X-Gateway-Custom-Header, value=HelloFromGateway}}], uri=http://httpbin.org, order=0, metadata={}}, RouteDefinition{id='retry-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/retry/**}}], filters=[FilterDefinition{name='RewritePath', args={regexp=/retry/?(?<remaining>.*), replacement=/${remaining}}}, FilterDefinition{name='Retry', args={retries=3, statuses=500,503, methods=GET,POST, series=SERVER_ERROR}}], uri=http://httpbin.org, order=0, metadata={}}, RouteDefinition{id='timeout-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/timeout/**}}], filters=[FilterDefinition{name='RewritePath', args={regexp=/timeout/?(?<remaining>.*), replacement=/${remaining}}}], uri=http://httpbin.org, order=0, metadata={}}]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [After]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [Before]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [Between]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [Cookie]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [Header]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [Host]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [Method]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [Path]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [Query]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [ReadBody]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [RemoteAddr]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [Weight]
+2026-07-28 16:25:14 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-07-28 16:25:14 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-07-28 16:25:14 - Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-07-28 16:25:14 - ControllerAdvice beans: none
+2026-07-28 16:25:14 - RouteDefinition external-service applying {_genkey_0=/api/external/**} to Path
+2026-07-28 16:25:14 - RouteDefinition matched: external-service
+2026-07-28 16:25:14 - RouteDefinition local-service applying {_genkey_0=/api/local/**} to Path
+2026-07-28 16:25:14 - RouteDefinition matched: local-service
+2026-07-28 16:25:14 - RouteDefinition httpbin-service applying {_genkey_0=/httpbin/**} to Path
+2026-07-28 16:25:14 - RouteDefinition httpbin-service applying filter {regexp=/httpbin/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:14 - RouteDefinition matched: httpbin-service
+2026-07-28 16:25:14 - RouteDefinition greet-service applying {_genkey_0=/greet/**} to Path
+2026-07-28 16:25:14 - RouteDefinition greet-service applying filter {regexp=/greet/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:14 - RouteDefinition greet-service applying filter {name=X-Gateway-Custom-Header, value=HelloFromGateway} to AddRequestHeader
+2026-07-28 16:25:14 - RouteDefinition matched: greet-service
+2026-07-28 16:25:14 - RouteDefinition retry-service applying {_genkey_0=/retry/**} to Path
+2026-07-28 16:25:14 - RouteDefinition retry-service applying filter {regexp=/retry/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:14 - RouteDefinition retry-service applying filter {retries=3, statuses=500,503, methods=GET,POST, series=SERVER_ERROR} to Retry
+2026-07-28 16:25:15 - Refresh routes error !!!
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'statuses' to org.springframework.http.HttpStatus[]
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:384) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:344) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$4(Binder.java:469) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:95) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:83) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:59) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:473) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:587) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:573) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$300(Binder.java:534) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:471) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:411) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:340) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:329) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindOrCreate(Binder.java:321) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindOrCreate(Binder.java:306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.cloud.gateway.support.ConfigurationService.bindOrCreate(ConfigurationService.java:100) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.support.ConfigurationService$ConfigurableBuilder.doBind(ConfigurationService.java:149) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.support.ConfigurationService$AbstractBuilder.bind(ConfigurationService.java:244) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.loadGatewayFilters(RouteDefinitionRouteLocator.java:144) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.getFilters(RouteDefinitionRouteLocator.java:176) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.convertToRoute(RouteDefinitionRouteLocator.java:117) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmitScalar(FluxFlatMap.java:488) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:421) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.drain(FluxMergeSequential.java:432) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.innerComplete(FluxMergeSequential.java:328) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialInner.onSubscribe(FluxMergeSequential.java:552) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8469) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:237) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:198) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8469) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:237) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:198) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4400) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4515) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4371) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4307) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4279) ~[reactor-core-3.4.18.jar:3.4.18]
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:81) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:40) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:73) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:50) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:53) ~[spring-boot-test-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:46) ~[spring-boot-test-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:315) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [org.springframework.http.HttpStatus] for value '500'; nested exception is java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.500
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.StringToArrayConverter.convert(StringToArrayConverter.java:72) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:109) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:100) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.convert(IndexedElementsBinder.java:142) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindValue(IndexedElementsBinder.java:95) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:83) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:70) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.ArrayBinder.bindAggregate(ArrayBinder.java:46) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:435) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:587) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:534) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:435) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:396) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:340) ~[spring-boot-2.7.0.jar:2.7.0]
+	... 136 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.500
+	at java.base/java.lang.Enum.valueOf(Enum.java:293) ~[na:na]
+	at org.springframework.core.convert.support.StringToEnumConverterFactory$StringToEnum.convert(StringToEnumConverterFactory.java:54) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.StringToEnumConverterFactory$StringToEnum.convert(StringToEnumConverterFactory.java:39) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.GenericConversionService$ConverterFactoryAdapter.convert(GenericConversionService.java:437) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41) ~[spring-core-5.3.20.jar:5.3.20]
+	... 154 common frames omitted
+2026-07-28 16:25:15 - RouteDefinition external-service applying {_genkey_0=/api/external/**} to Path
+2026-07-28 16:25:15 - RouteDefinition matched: external-service
+2026-07-28 16:25:15 - RouteDefinition local-service applying {_genkey_0=/api/local/**} to Path
+2026-07-28 16:25:15 - RouteDefinition matched: local-service
+2026-07-28 16:25:15 - RouteDefinition httpbin-service applying {_genkey_0=/httpbin/**} to Path
+2026-07-28 16:25:15 - RouteDefinition httpbin-service applying filter {regexp=/httpbin/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:15 - RouteDefinition matched: httpbin-service
+2026-07-28 16:25:15 - RouteDefinition greet-service applying {_genkey_0=/greet/**} to Path
+2026-07-28 16:25:15 - RouteDefinition greet-service applying filter {regexp=/greet/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:15 - RouteDefinition greet-service applying filter {name=X-Gateway-Custom-Header, value=HelloFromGateway} to AddRequestHeader
+2026-07-28 16:25:15 - RouteDefinition matched: greet-service
+2026-07-28 16:25:15 - RouteDefinition retry-service applying {_genkey_0=/retry/**} to Path
+2026-07-28 16:25:15 - RouteDefinition retry-service applying filter {regexp=/retry/?(?<remaining>.*), replacement=/${remaining}} to RewritePath
+2026-07-28 16:25:15 - RouteDefinition retry-service applying filter {retries=3, statuses=500,503, methods=GET,POST, series=SERVER_ERROR} to Retry
+2026-07-28 16:25:15 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-07-28 16:25:15 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'statuses' to org.springframework.http.HttpStatus[]:
+
+    Property: statuses
+    Value: 500,503
+    Origin: "statuses" from property source "source"
+    Reason: failed to convert java.lang.String to org.springframework.http.HttpStatus (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.500)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    100 CONTINUE
+    101 SWITCHING_PROTOCOLS
+    102 PROCESSING
+    103 CHECKPOINT
+    200 OK
+    201 CREATED
+    202 ACCEPTED
+    203 NON_AUTHORITATIVE_INFORMATION
+    204 NO_CONTENT
+    205 RESET_CONTENT
+    206 PARTIAL_CONTENT
+    207 MULTI_STATUS
+    208 ALREADY_REPORTED
+    226 IM_USED
+    300 MULTIPLE_CHOICES
+    301 MOVED_PERMANENTLY
+    302 FOUND
+    302 MOVED_TEMPORARILY
+    303 SEE_OTHER
+    304 NOT_MODIFIED
+    305 USE_PROXY
+    307 TEMPORARY_REDIRECT
+    308 PERMANENT_REDIRECT
+    400 BAD_REQUEST
+    401 UNAUTHORIZED
+    402 PAYMENT_REQUIRED
+    403 FORBIDDEN
+    404 NOT_FOUND
+    405 METHOD_NOT_ALLOWED
+    406 NOT_ACCEPTABLE
+    407 PROXY_AUTHENTICATION_REQUIRED
+    408 REQUEST_TIMEOUT
+    409 CONFLICT
+    410 GONE
+    411 LENGTH_REQUIRED
+    412 PRECONDITION_FAILED
+    413 PAYLOAD_TOO_LARGE
+    413 REQUEST_ENTITY_TOO_LARGE
+    414 REQUEST_URI_TOO_LONG
+    414 URI_TOO_LONG
+    415 UNSUPPORTED_MEDIA_TYPE
+    416 REQUESTED_RANGE_NOT_SATISFIABLE
+    417 EXPECTATION_FAILED
+    418 I_AM_A_TEAPOT
+    419 INSUFFICIENT_SPACE_ON_RESOURCE
+    420 METHOD_FAILURE
+    421 DESTINATION_LOCKED
+    422 UNPROCESSABLE_ENTITY
+    423 LOCKED
+    424 FAILED_DEPENDENCY
+    425 TOO_EARLY
+    426 UPGRADE_REQUIRED
+    428 PRECONDITION_REQUIRED
+    429 TOO_MANY_REQUESTS
+    431 REQUEST_HEADER_FIELDS_TOO_LARGE
+    451 UNAVAILABLE_FOR_LEGAL_REASONS
+    500 INTERNAL_SERVER_ERROR
+    501 NOT_IMPLEMENTED
+    502 BAD_GATEWAY
+    503 SERVICE_UNAVAILABLE
+    504 GATEWAY_TIMEOUT
+    505 HTTP_VERSION_NOT_SUPPORTED
+    506 VARIANT_ALSO_NEGOTIATES
+    507 INSUFFICIENT_STORAGE
+    508 LOOP_DETECTED
+    509 BANDWIDTH_LIMIT_EXCEEDED
+    510 NOT_EXTENDED
+    511 NETWORK_AUTHENTICATION_REQUIRED
+
+2026-07-28 16:25:15 - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@b86de0d] to prepare test instance [com.cognizant.apigateway.ApiGatewayApplicationTests@6f1c29b7]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:315) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'statuses' to org.springframework.http.HttpStatus[]
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:384) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:344) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$4(Binder.java:469) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:95) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:83) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:59) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:473) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:587) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:573) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$300(Binder.java:534) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:471) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:411) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:340) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:329) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindOrCreate(Binder.java:321) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindOrCreate(Binder.java:306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.cloud.gateway.support.ConfigurationService.bindOrCreate(ConfigurationService.java:100) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.support.ConfigurationService$ConfigurableBuilder.doBind(ConfigurationService.java:149) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.support.ConfigurationService$AbstractBuilder.bind(ConfigurationService.java:244) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.loadGatewayFilters(RouteDefinitionRouteLocator.java:144) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.getFilters(RouteDefinitionRouteLocator.java:176) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.convertToRoute(RouteDefinitionRouteLocator.java:117) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmitScalar(FluxFlatMap.java:488) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:421) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.drain(FluxMergeSequential.java:432) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.innerComplete(FluxMergeSequential.java:328) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialInner.onSubscribe(FluxMergeSequential.java:552) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8469) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:237) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:198) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8469) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:237) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:198) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8469) ~[reactor-core-3.4.18.jar:3.4.18]
+	at reactor.core.publisher.Flux.blockLast(Flux.java:2644) ~[reactor-core-3.4.18.jar:3.4.18]
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.lambda$onApplicationEvent$0(WeightCalculatorWebFilter.java:133) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.ifAvailable(DefaultListableBeanFactory.java:2044) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.onApplicationEvent(WeightCalculatorWebFilter.java:133) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:73) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:50) ~[spring-cloud-gateway-server-3.1.3.jar:3.1.3]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 68 common frames omitted
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99) ~[reactor-core-3.4.18.jar:3.4.18]
+		at reactor.core.publisher.Flux.blockLast(Flux.java:2645) ~[reactor-core-3.4.18.jar:3.4.18]
+		... 91 common frames omitted
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [org.springframework.http.HttpStatus] for value '500'; nested exception is java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.500
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.StringToArrayConverter.convert(StringToArrayConverter.java:72) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:109) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:100) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.convert(IndexedElementsBinder.java:142) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindValue(IndexedElementsBinder.java:95) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:83) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:70) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.ArrayBinder.bindAggregate(ArrayBinder.java:46) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:435) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:587) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:534) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:435) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:396) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:340) ~[spring-boot-2.7.0.jar:2.7.0]
+	... 137 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus.500
+	at java.base/java.lang.Enum.valueOf(Enum.java:293) ~[na:na]
+	at org.springframework.core.convert.support.StringToEnumConverterFactory$StringToEnum.convert(StringToEnumConverterFactory.java:54) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.StringToEnumConverterFactory$StringToEnum.convert(StringToEnumConverterFactory.java:39) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.GenericConversionService$ConverterFactoryAdapter.convert(GenericConversionService.java:437) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41) ~[spring-core-5.3.20.jar:5.3.20]
+	... 155 common frames omitted
+]]></system-out>
+  </testcase>
+</testsuite>
