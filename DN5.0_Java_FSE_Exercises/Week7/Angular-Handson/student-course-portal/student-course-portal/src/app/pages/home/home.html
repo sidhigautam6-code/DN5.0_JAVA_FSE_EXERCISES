@@ -1,0 +1,38 @@
+<div class="home-container">
+  <h1>{{ portalName }}</h1>
+  <p class="subtitle">Your one-stop platform for course management and academic success</p>
+  
+  <div class="stats-row">
+    <div class="stat-card">
+      <h3>Courses Available</h3>
+      <p class="stat-number">12</p>
+    </div>
+    <div class="stat-card">
+      <h3>Enrolled</h3>
+      <p class="stat-number">3</p>
+    </div>
+    <div class="stat-card">
+      <h3>GPA</h3>
+      <p class="stat-number">3.8</p>
+    </div>
+  </div>
+
+  <div class="action-section">
+    <button [disabled]="!isPortalActive" (click)="message = 'Enrollment feature coming soon'" class="btn-primary">
+      Enroll Now
+    </button>
+    <p>{{ message }}</p>
+  </div>
+
+  <div class="search-section">
+    <label for="search-courses">Search courses</label>
+    <input 
+      id="search-courses"
+      type="text" 
+      [value]="searchTerm"
+      (input)="searchTerm = $event.target.value"
+      placeholder="Search courses..."
+      class="search-input">
+    <p *ngIf="searchTerm">Searching for: <strong>{{ searchTerm }}</strong></p>
+  </div>
+</div>
